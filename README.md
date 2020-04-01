@@ -1,4 +1,5 @@
 # test automator on appium server
+* run android emulator , this example app use 8 version.
 * edit ~/.zshrc (depends your shell, e.g. ~/.bashrc, ~/.bash_profile)
 ```
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home"
@@ -65,6 +66,7 @@ main();
 node index
 ```
 # test automator on appium desktop
+* run android emulator , this example app use 8 version.
 * install appium desktop and click edit configurations
 ![img](./img/1.png)
 * edit as your config
