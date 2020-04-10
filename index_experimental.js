@@ -44,9 +44,9 @@ async function main () {
   await client.pressKeyCode(7);
   await client.pressKeyCode(7);
 
-  selector = 'new UiSelector().resourceId("com.deforav2.beta:id/58b7d112-d096-4a3c-bc84-209dce50a9f6").className("android.widget.ImageView")';
+  selector = 'new UiSelector().resourceId("com.deforav2.beta:id/b79b4d84-b216-4c15-b46a-756f94d02419").className("android.widget.ImageView")';
   el1 = await client.$(`android=${selector}`)
-  el1.click()
+  await el1.click()
 
   // await client.touchAction({action: 'tap', x: 314, y: 1692})
 

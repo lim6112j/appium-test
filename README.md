@@ -86,3 +86,22 @@ node index
 * and save as , result will be like below
 ![img](./img/5.png)
 * and click start session
+# IOS TEST
+* npm uninstall -g appium && npm install -g appium@rc (최신버전 설치)
+* Defora.app 을 xcode에서 왼쪽 창 products폴더 안에 있는 Defora.app을 복사 해서 써야한다. 아카이빙된 파일은 시뮬레이터에서 실행이 안된다.
+* appium desktop은 포트는 4724로 실행
+* terminal 에서 appium 실행 (default 값인 4723으로 실행된다)
+* appium desktop에서 custom server 로 실행 - 즉 터미널에 실행되는 appium을 이용해야한다.
+```
+{
+  "platformName": "iOS",
+  "platformVersion": "12.1",
+  "deviceName": "iPhone Simulator",
+  "app": "/Users/byeongcheollim/Downloads/Defora.app",
+  "automationName": "XCUITest",
+  "showIOSLog": true,
+  "showXcodeLog": true,
+  "noReset": true,
+  "usePrebuiltWDA": true
+}
+```
