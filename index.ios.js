@@ -54,8 +54,8 @@ async function main() {
   el1 = await client.$(`(//XCUIElementTypeOther[@name=\"Popular\"])[1]/XCUIElementTypeOther[2]`);
   await el1.click();
 
-  el1 = await client.$(`name=Create group`);
-  await el1[0].click();
+  el1 = await client.$(`(//XCUIElementTypeOther[@name="Create group"])[1]`);
+  await el1.click();
   // el1 = await client.$(`(//XCUIElementTypeOther[@name=\"Popular\"])[1]/XCUIElementTypeOther[2]`);
   // await el1.click();
   // await client.touchAction({action: 'tap', x: 120, y: 570})
